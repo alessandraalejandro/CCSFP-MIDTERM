@@ -99,7 +99,7 @@ class ADMIN
   {
     try {
       $stmt = $this->conn->prepare("SELECT * FROM users WHERE email=:email_id AND account_status = :account_status AND user_type = :user_type");
-      $stmt->execute(array(":email_id" => $email, ":account_status" => "active", "user_type" => 1));
+      $stmt->execute(array(":email_id" => $email, ":account_status" => "active", ":user_type" => 1));
       $userRow = $stmt->fetch(PDO::FETCH_ASSOC);
 
 

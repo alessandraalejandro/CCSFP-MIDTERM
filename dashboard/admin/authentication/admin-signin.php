@@ -36,7 +36,7 @@ if (isset($_POST['btn-signin'])) {
       $_SESSION['status'] = "Invalid captcha, please try again!";
       $_SESSION['status_code'] = "error";
       $_SESSION['status_timer'] = 40000;
-      header("Location: ../../../../private/admin/");
+      header("Location: ../../private/admin/");
       exit;
    }
 }
